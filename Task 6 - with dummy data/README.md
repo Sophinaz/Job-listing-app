@@ -5,23 +5,25 @@ This is a job listing app that shows available jobs at the moment.
 The data on the cards and detail pages are dynamically rendered.
 The landing page looks like this:
 
-![Screenshot (167)](https://github.com/user-attachments/assets/78eb6364-5d1a-4d1f-8bec-b55fb0b14f00)
+![Screenshot (166)](https://github.com/user-attachments/assets/12805142-49f6-4075-aa8a-85a6e7afdbab)
 
-![Screenshot (168)](https://github.com/user-attachments/assets/9568be00-bc67-43ef-896d-a8907fcee72b)
+
+![Screenshot (168)](https://github.com/user-attachments/assets/f364d80f-24d8-4322-bc15-bfb39c4d2866)
+
 
 We can sort the cards based on alphabetically:
-![Screenshot (169)](https://github.com/user-attachments/assets/a24ffd12-d17f-4df2-8f1e-025dccc67dcf)
-![Screenshot (171)](https://github.com/user-attachments/assets/f604e22f-a37e-415a-9d01-e77d01a51a43)
+![Screenshot (169)](https://github.com/user-attachments/assets/22f41d6d-c8e9-4f99-8abf-3f5dae8e222d)
+
+![Screenshot (170)](https://github.com/user-attachments/assets/6b07b0ff-7b87-414f-bbb4-8adaf34aebaf)
 
 
 When one of the cards are clicked, it takes us to their corresponding detail page.
 Some of the detail pages of the cards:
 
-![Screenshot (172)](https://github.com/user-attachments/assets/c608c1ba-dbfa-47ce-bea2-b963379e6c29)
+![Screenshot (172)](https://github.com/user-attachments/assets/9b4bb1c6-bb0e-4e81-bb64-761247040d53)
 
-![Screenshot (173)](https://github.com/user-attachments/assets/cf6e41ff-da00-47c9-b716-e20ebcf193b5)
 
-![Screenshot (174)](https://github.com/user-attachments/assets/ab9e2b7d-8232-40f8-8a0c-3c775d6aa350)
+![Screenshot (174)](https://github.com/user-attachments/assets/13817d00-effa-4578-b39e-436e05a67642)
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
