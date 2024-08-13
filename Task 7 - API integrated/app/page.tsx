@@ -4,7 +4,11 @@ import Type2 from "./type";
 
 const getData = async () => {
   const res = await fetch('https://akil-backend.onrender.com/opportunities/search', {method: 'GET'})
-  return res.json()
+  if (res.status === 200){
+    return res.json()
+  } else {
+    return []
+  }
 }
 
 
