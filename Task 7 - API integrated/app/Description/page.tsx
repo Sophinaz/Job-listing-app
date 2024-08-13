@@ -11,9 +11,14 @@ interface Type{
     id: string
 }
 
+
 const getData = async (id: string) => {
     const res = await fetch(`https://akil-backend.onrender.com/opportunities/${id}`, {method: 'GET'})
-    return res.json()
+    if (res.status === 200){
+        return res.json()
+    } else {
+        return []
+    }
   }
 
 
@@ -26,6 +31,14 @@ const page = async ({searchParams}: {searchParams: Type}) => {
     const colors = ["orange", "green", "purple"]
     const back = ["rgb(219, 219, 176)", "rgb(113, 190, 113)", "rgb(180, 143, 180);"]
 
+    // Handling Error
+    if (!data){
+        return (
+        <div className=" flex h-screen justify-center items-center">
+        <h1 className="text-red-500 text-center">Error while fetching data</h1>
+        </div>
+    )
+    }
 
     return (
     <div className=' flex space-x-28'>

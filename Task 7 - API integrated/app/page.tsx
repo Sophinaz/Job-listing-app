@@ -13,6 +13,15 @@ export default async function Home() {
   // fetching all jobs from API
   const { data } = await getData();
 
+  // Handling Error
+  if (!data){
+    return (
+    <div className=" flex h-screen justify-center items-center">
+      <h1 className="text-red-500 text-center">Error while fetching data</h1>
+    </div>
+  )
+  }
+
   return (
     <main className="bg-white h-fit flex mb-4 ">
       
