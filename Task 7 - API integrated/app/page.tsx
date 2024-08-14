@@ -50,10 +50,7 @@ export default async function Home() {
 
           {data.map((item: Type2, index: number) => (
             // Linking to the description page
-            <Link key={index} href={{
-              pathname: "/Description",
-              query: { id: item.id }
-            }}>
+            <Link key={index} href={`/Description/${item.id}`}>
 
                 {/* rendering the corresponding cards */}
                 < Card title={item.title} opType={item.opType} description={item.description} location={item.location} company={item.orgName} image={item.logoUrl} categories={item.categories}/>
