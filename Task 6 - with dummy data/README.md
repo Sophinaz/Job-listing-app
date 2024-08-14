@@ -8,9 +8,6 @@ The landing page looks like this:
 ![Screenshot (166)](https://github.com/user-attachments/assets/12805142-49f6-4075-aa8a-85a6e7afdbab)
 
 
-![Screenshot (168)](https://github.com/user-attachments/assets/f364d80f-24d8-4322-bc15-bfb39c4d2866)
-
-
 We can sort the cards based on alphabetically:
 ![Screenshot (169)](https://github.com/user-attachments/assets/22f41d6d-c8e9-4f99-8abf-3f5dae8e222d)
 
@@ -22,8 +19,6 @@ Some of the detail pages of the cards:
 
 ![Screenshot (172)](https://github.com/user-attachments/assets/9b4bb1c6-bb0e-4e81-bb64-761247040d53)
 
-
-![Screenshot (174)](https://github.com/user-attachments/assets/13817d00-effa-4578-b39e-436e05a67642)
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
