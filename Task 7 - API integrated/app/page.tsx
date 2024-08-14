@@ -1,29 +1,21 @@
+"use client"
 import Card from "@/components/Card";
 import Link from "next/link";
 import Type2 from "./type";
+import { useGetAllJobsQuery } from "./service/getApi";
 
-const getData = async () => {
-  const res = await fetch('https://akil-backend.onrender.com/opportunities/search', {method: 'GET'})
-  if (res.status === 200){
-    return res.json()
-  } else {
-    return []
-  }
+
+export default function Home() {
+
+  let { data, isError, isLoading } = useGetAllJobsQuery(undefined);
+  const job: Type2[] = data?.data
+  console.log(job)
+
+    if (isError){
+    return <h1>There seems to be an error while fetching your job</h1>
 }
-
-
-export default async function Home() {
-
-  // fetching all jobs from API
-  const { data } = await getData();
-
-  // Handling Error
-  if (!data){
-    return (
-    <div className=" flex h-screen justify-center items-center">
-      <h1 className="text-red-500 text-center">Error while fetching data</h1>
-    </div>
-  )
+  if (isLoading){
+      return <h1 className='text-center text-lg mt-96'>Loading ....</h1>
   }
 
   return (
@@ -33,7 +25,7 @@ export default async function Home() {
         <div className="flex items-center justify-between">
           <div className=" space-y-1">
             <h1 className=" size5">Opportunities</h1>
-            <h5  className="size2  ml-1 "> showing {data.length} results</h5>
+            <h5  className="size2  ml-1 "> showing {job.length} results</h5>
           </div>
           <div className="mr-8 size2">
             <h5 className=" ">Sort by: <span className="font-bold text-gray-600"> 
@@ -48,7 +40,7 @@ export default async function Home() {
 
         <ul className=" space-y-6 mt-9 ">
 
-          {data.map((item: Type2, index: number) => (
+          {job.map((item: Type2, index: number) => (
             // Linking to the description page
             <Link key={index} href={`/Description/${item.id}`}>
 
