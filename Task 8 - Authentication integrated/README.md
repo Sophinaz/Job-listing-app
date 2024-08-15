@@ -1,27 +1,37 @@
 <h1>Description</h1>
 
-This is a job listing app that shows available jobs at the moment.
-
-The data on the cards and detail pages are dynamically rendered.
-The loading state:
-
-![Screenshot (180)](https://github.com/user-attachments/assets/56a998a0-c722-4af2-b133-5c39c2d26ce1)
+The page initially goes to the home page and checks if there is an open session or an access token that tells if the user has logged in. If the user hasnt logged in, it redirects to the sign up page where the user has options to sign up whether with google account or with email.
 
 
-The landing page looks like this:
-
-![Screenshot (176)](https://github.com/user-attachments/assets/4014ca1f-dd74-471e-b136-505991c5ea5e)
-
-The error page:
-![Screenshot (175)](https://github.com/user-attachments/assets/8a640689-70ee-457b-be1a-d707505eab2d)
+If the user chooses to sign up with his google account, the app will redirect to this page:
 
 
-When one of the cards are clicked, it takes us to their corresponding detail page.
-Some of the detail pages of the cards:
 
-![Screenshot (181)](https://github.com/user-attachments/assets/1a8763c3-b65a-49bb-a282-42b41cd6f018)
+But if the user chose to sign up with his email:
 
-![Screenshot (182)](https://github.com/user-attachments/assets/2db84498-12bb-44a4-bbf0-25cfb904fa4a)
+
+The page goes to the verify email page, where the user will be asked for their otp number to verify their email account:
+
+
+If the user chose either one of them and the sign up was successful the page goes to the home page to see the job lists page.
+
+
+The user also has also an option to login:
+
+
+If the user logged in, He will be redirected to the home page:
+
+
+
+
+From their the user can also access the details page about a specific job from the job lists on the home page:
+
+
+
+
+
+
+
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
