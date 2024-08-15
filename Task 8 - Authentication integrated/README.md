@@ -27,10 +27,9 @@ If the user chose either one of them and the sign up was successful the page goe
 
 The user also has also an option to login:
 
+![Screenshot (192)](https://github.com/user-attachments/assets/e8a97d0f-48e9-48a1-a5fb-8ad92ced0399)
 
-If the user logged in, He will be redirected to the home page.
-
-From their the user can also access the details page about a specific job from the job lists on the home page:
+If the user logged in, He will be redirected to the home page. From their the user can also access the details page about a specific job from the job lists on the home page:
 
 ![Screenshot (191)](https://github.com/user-attachments/assets/7c67b752-1e77-44a1-8d0f-ff3c376ff9c3)
 
