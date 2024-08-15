@@ -16,8 +16,6 @@ const page = () => {
   const [val, setVal] = useState("")
   
 
-
-
   const handleSubmit = async () =>{
     const temp = val
     setVal("")
@@ -27,18 +25,15 @@ const page = () => {
       const res  = await verifyEmail({"email": email, "otp": temp})
       const { data } = res
 
-      console.log(data)
+      console.log('data:', data)
+      console.log('data: ', data.data);
+      console.log('token: ', data.data.accessToken)
+      localStorage.setItem("accessToken", data.data.accessToken)
 
-      if (data.success === true){
-        router.push(`/`)
-      }
-
-      else{
-        alert('error')
-      router.push(`/signup`)
-      }
+      router.push(`/`)
 
       }catch (err){
+        
       console.log(err)
       alert('sign up again')
       router.push(`/signup`)

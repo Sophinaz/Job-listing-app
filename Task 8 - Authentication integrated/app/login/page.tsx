@@ -3,6 +3,7 @@ import React from 'react'
 import { useForm } from 'react-hook-form'
 import { useSignInMutation } from '../service/getApi'
 import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 
 interface formtype {
     email: string,
@@ -27,14 +28,13 @@ const page = () => {
     }
 
 
-
-
     const onSubmit = async (user: formtype) => {
         try{
             const res = await signIn(user)
             const { data } = res;
-            console.log(data);
-            localStorage.setItem("accessToken", data.accessToken)
+            console.log('data: ', data.data);
+            console.log('token: ', data.data.accessToken)
+            localStorage.setItem("accessToken", data.data.accessToken)
 
             router.push(`/`)
     
@@ -69,7 +69,7 @@ const page = () => {
 
             </div>
             <button onClick={handleSubmit(onSubmit)} className='w-full py-4 text-white font-epilogue rounded-full bg-indigo-900'>Login</button>
-            <h2 className='text-sm'>Don't have an account? <span className='font-semibold ml-1 text-base text-blue-900'>Sign Up</span></h2>
+            <h2 className='text-sm'>Don't have an account? <Link href={`/signup`}> <span className='font-semibold ml-1 text-base text-blue-900'>Sign Up</span></Link></h2>
         </form>
     </div>
   )

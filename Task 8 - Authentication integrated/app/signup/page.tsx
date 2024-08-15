@@ -116,7 +116,9 @@ const page = () => {
                     </div>
 
                     <div className='space-y-6 mt-10'>
-                        <h2 className='font-poppins  text-[#7C8493]'>Already have an account? <span className='font-bold text-indigo-800'>Login</span></h2>  
+
+                        <h2 className='font-poppins  text-[#7C8493]'>Already have an account?<Link href={`/login`}> <span className='font-bold text-indigo-800'>Login</span></Link></h2>  
+
                         <p className='text-[#7C8493]'>
                             By clicking Continue, you acknowledge that you have read and accepted our <span className='text-indigo-800'>Terms of Service</span > and <span className='text-indigo-800'>Privacy Policy.</span>
                         </p>

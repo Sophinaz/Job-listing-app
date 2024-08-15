@@ -15,13 +15,11 @@ export default function Home() {
     const { data: session} = useSession({
       required: true,
       onUnauthenticated() {
-        redirect(`/signup?callback=/`)
+      redirect(`/signup?callback=/`)
       }
     })
 
   }
-
-
 
 
   let { data, isError, isLoading } = useGetAllJobsQuery(undefined);
