@@ -9,7 +9,6 @@ import { redirect } from "next/navigation";
 
 export default function Home() {
   const token = localStorage.getItem("accessToken")
-  console.log("token: ", token)
 
   if ((token === 'undefined') || (!token)){
     const { data: session} = useSession({
