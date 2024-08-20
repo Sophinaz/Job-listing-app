@@ -36,7 +36,7 @@ const Page = () => {
       <div style={{ width: "850px" }} className="  ml-32 mt-6 bg-white">
         <div className="flex items-center justify-between">
           <div className=" space-y-1">
-            <h1 className=" size5">Opportunities</h1>
+            <h1 className=" size5">Bookmarks</h1>
             <h5 className="size2  ml-1 "> showing {job.length} results</h5>
           </div>
           <div className="mr-8 size2">
