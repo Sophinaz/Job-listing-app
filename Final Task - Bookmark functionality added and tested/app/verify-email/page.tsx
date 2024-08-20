@@ -4,7 +4,7 @@ import { useVerifyEmailMutation } from '../service/getApi'
 import { useRouter, useSearchParams } from 'next/navigation'
 import Otp from '@/components/otp'
 
-const page = () => {
+const Page = () => {
   const router = useRouter()
   const params = useSearchParams()
   const email = params.get('email')
@@ -41,7 +41,7 @@ const page = () => {
         <div className='w-4/12 flex items-center flex-col space-y-10'>
             <h1 className='font-black text-4xl font-poppins text-[#25324B]'>Verify Email</h1>
 
-            <p className='text-base epi text-[#7C8493]'>We've sent a verification code to the email address you provided. To complete the verification process, please enter the code here.</p>
+            <p className='text-base epi text-[#7C8493]'>We&apos;ve sent a verification code to the email address you provided. To complete the verification process, please enter the code here.</p>
 
             <Otp getOtp={setVal}/>
         </div>
@@ -49,4 +49,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

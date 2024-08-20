@@ -27,12 +27,12 @@ const Header = () => {
 
         {isloggedin ? (
           <div className='flex space-x-10 w-1/3'>
-            <button onClick={handlebookmark} className=' mt-10 py-1 px-4 rounded-3xl bg-indigo-800 text-lg text-white epi'>Bookmarks</button>
-            <button onClick={handleLogoutclick} className='mr-48 mt-10 py-1 px-4 rounded-3xl bg-indigo-900 text-lg text-white epi'>Log out</button>
+            <button onClick={handlebookmark} className='btnc mt-10 py-1 px-4 rounded-3xl bg-indigo-800 text-lg text-white epi'>Bookmarks</button>
+            <button onClick={handleLogoutclick} className='btnb mr-48 mt-10 py-1 px-4 rounded-3xl bg-indigo-900 text-lg text-white epi'>Log out</button>
           </div>
         ) : (
           <div className='w-1/4 flex justify-center'>
-            <button onClick={() => router.push(`/login`)} className='mr-48 mt-10 py-1 px-4 rounded-3xl bg-indigo-900 text-lg text-white epi'>Log in</button>
+            <button onClick={() => router.push(`/login`)} className='btna mr-48 mt-10 py-1 px-4 rounded-3xl bg-indigo-900 text-lg text-white epi'>Log in</button>
           </div>)}
     </div>
   )

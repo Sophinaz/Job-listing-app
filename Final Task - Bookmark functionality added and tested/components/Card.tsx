@@ -3,7 +3,6 @@ import bookmark from "../Images/bookmark.png";
 import yellow from "../Images/yellow.png";
 import Image from "next/image";
 import { useCreateBookmarkMutation } from "@/app/service/getApi";
-import { IndentStyle } from "typescript";
 import { useSession } from "next-auth/react";
 import { authorize } from "@/app/service/loginSlice";
 import { useDispatch, useSelector } from "react-redux";
@@ -106,6 +105,7 @@ const Card = ({
             ))}
         </ul>
       </div>
+
       {isloggedin &&
         (bookmarked ? (
           <Image
@@ -114,20 +114,23 @@ const Card = ({
               e.stopPropagation();
               e.preventDefault();
             }}
-            className="w-8 mr-10 absolute top-0 mt-4  hover:scale-125 right-0 h-8"
+            className="yellow w-8 mr-10 absolute top-0 mt-4  hover:scale-125 right-0 h-8"
             src={yellow}
             alt="kl"
+            
           />
         ) : (
           <Image
             onClick={(e) => {
               handleMakeBookmark(e);
             }}
-            className="w-8 mr-10 absolute top-0 mt-4  hover:scale-125 right-0 h-8"
+            className={`w-8 mr-10 absolute top-0 mt-4  hover:scale-125 right-0 h-8`}
             src={bookmark}
+            id={`${id}`}
             alt="kr"
           />
         ))}
+
     </div>
   );
 };

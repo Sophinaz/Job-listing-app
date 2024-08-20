@@ -15,7 +15,7 @@ interface formtype {
     role: string
 }
 
-const page = () => {
+const Page = () => {
     const router = useRouter()
     const form = useForm<formtype>()
     const {control, register, formState, handleSubmit} = form
@@ -124,4 +124,4 @@ const page = () => {
   )
 }
 
-export default page;
+export default Page;

@@ -19,22 +19,10 @@ import { useGetSingleJobQuery } from '@/app/service/getApi'
 import { useSession } from 'next-auth/react'
 
 const Page = () => {
-    const token = localStorage.getItem("accessToken")
-    console.log(token)
-    if (!token){
-        const { data: session} = useSession({
-            required: true,
-            onUnauthenticated() {
-            redirect(`/signup?`)
-            }
-        })
-    }
 
     const params = useParams();
     let { data, isError, isLoading } = useGetSingleJobQuery(params.id);
     const job: Type2 = data?.data
-    console.log(job)
-
 
     
     // colors to alternate

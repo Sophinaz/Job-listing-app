@@ -5,8 +5,8 @@ import Type2 from "./type";
 import { useGetAllJobsQuery } from "./service/getApi";
 import Header from "@/components/Header";
 import { useDispatch } from "react-redux";
-import { authorize, unauthorize } from "./service/loginSlice";
-import { useEffect, useState } from "react";
+import { authorize } from "./service/loginSlice";
+import { useEffect } from "react";
 import { useSession } from "next-auth/react";
 
 
@@ -28,6 +28,7 @@ export default function Home() {
 
   let { data, isError, isLoading } = useGetAllJobsQuery(undefined);
   const job: Type2[] = data?.data
+  console.log(job)
 
     if (isError){
     return <h1 className='text-center text-lg mt-72'>There seems to be an error while fetching your data</h1>
