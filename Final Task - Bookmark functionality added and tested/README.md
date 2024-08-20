@@ -1,45 +1,3 @@
-<h1>Description</h1>
-
-The page initially goes to the home page and checks if there is an open session or an access token that tells if the user has logged in. If the user hasnt logged in, it redirects to the sign up page where the user has options to sign up whether with google account or with email.
-
-![Screenshot (184)](https://github.com/user-attachments/assets/a17f524a-cb2b-40e4-8f55-e459012e0017)
-
-
-If the user chooses to sign up with his google account, the app will redirect to this page:
-
-![Screenshot (186)](https://github.com/user-attachments/assets/6251ad1a-5c28-4c50-8e31-28c5724f434f)
-
-![Screenshot (187)](https://github.com/user-attachments/assets/2fa0ce27-fc17-460d-afb3-429382c7a488)
-
-
-But if the user chose to sign up with his email:
-
-![Screenshot (189)](https://github.com/user-attachments/assets/7100e8f5-f606-4ca3-8331-f545525d0977)
-
-The page goes to the verify email page, where the user will be asked for his otp number to verify their email account:
-
-![Screenshot (190)](https://github.com/user-attachments/assets/8bb70da6-dc3d-444e-9fac-304aeb4b63b5)
-
-If the user chose either one of them and the sign up was successful the page goes to the home page to see the job lists page.
-
-![Screenshot (188)](https://github.com/user-attachments/assets/1e35e65b-cf07-4190-9bb5-527546fa6880)
-
-
-The user also has also an option to login:
-
-![Screenshot (192)](https://github.com/user-attachments/assets/e8a97d0f-48e9-48a1-a5fb-8ad92ced0399)
-
-If the user logged in, He will be redirected to the home page. From their the user can also access the details page about a specific job from the job lists on the home page:
-
-![Screenshot (191)](https://github.com/user-attachments/assets/7c67b752-1e77-44a1-8d0f-ff3c376ff9c3)
-
-
-
-
-
-
-
-
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -76,4 +34,42 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+<h1>Description</h1>
+
+If the user has not logged in yet. The bookmark funtionality will not be available.
+
+![Screenshot (194)](https://github.com/user-attachments/assets/677445d6-86d4-423c-a4d4-6e17db6ce902)
+
+After the user logged in.
+
+![Screenshot (195)](https://github.com/user-attachments/assets/6dc9fd1e-7d5d-4284-95a4-6a23cc83cc97)
+
+The user will have access to bookmark jobs and get all the bookamarked jobs.
+
+![Screenshot (196)](https://github.com/user-attachments/assets/fea26172-9875-4e1e-8674-21d7fad6f639)
+
+![Screenshot (197)](https://github.com/user-attachments/assets/e93a95fd-c171-45a0-9fb7-9a0e98e29159)
+
+![Screenshot (203)](https://github.com/user-attachments/assets/27e8a05e-7d6c-4824-b578-fcda21d09a76)
+
+
+The user can also delete the bookmark.
+
+![Screenshot (204)](https://github.com/user-attachments/assets/20cdeee3-1d9c-4e40-965e-b02735e32192)
+
+
+![Screenshot (205)](https://github.com/user-attachments/assets/a5b9f262-2edf-42f1-add4-5ad08dbe3dfe)
+
+
+Testing with jest.
+
+![Screenshot (201)](https://github.com/user-attachments/assets/6665a7aa-40d5-4d17-b0fb-b8993fd6be3e)
+
+Testing with cypress.
+
+![Screenshot (202)](https://github.com/user-attachments/assets/edc916eb-0fef-46cd-818a-eae1ae561eb8)
+
+
 
