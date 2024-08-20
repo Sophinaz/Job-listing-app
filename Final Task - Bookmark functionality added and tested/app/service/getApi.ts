@@ -1,10 +1,8 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import build from "next/dist/build";
 interface Type{
     data: string
     access: string | null
 }
-
 
 export const jobsApi = createApi({
     reducerPath: "Jobs",
@@ -48,7 +46,7 @@ export const jobsApi = createApi({
             })
         }), 
         createBookmark: builder.mutation({
-            query: ({ ids, token }) => (console.log("id:-", ids, "token:-", token),{
+            query: ({ ids, token }) => ({
                 url: `/bookmarks/${ids}`, 
                 method: "POST", 
                 headers: {'Authorization': `Bearer ${token}`},
